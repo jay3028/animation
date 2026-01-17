@@ -67,4 +67,76 @@
   .animate-rotate-anticlockwise {
     animation: rotate-anticlockwise 20s linear infinite;
   }
+
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-in-left-delay-1 {
+    animation: slide-in-left 0.6s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+  }
+
+  .animate-slide-in-left-delay-2 {
+    animation: slide-in-left 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+
+  .animate-slide-in-left-delay-3 {
+    animation: slide-in-left 0.6s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+
+  .animate-slide-in-left-delay-4 {
+    animation: slide-in-left 0.6s ease-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+
+  .animate-slide-in-left-delay-5 {
+    animation: slide-in-left 0.6s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  @keyframes scroll-pills-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scroll-pills-right {
+    animation: scroll-pills-right 15s linear infinite;
+  }
+
+  @keyframes scroll-pills-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-scroll-pills-left {
+    animation: scroll-pills-left 15s linear infinite;
+  }
 }
